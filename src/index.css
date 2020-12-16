@@ -1,13 +1,183 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 50px 30px;
+}
+:root {
+  --primary: #FFFFFF;
+  --secondary: #00a6fb;
+  --tertiary: #FE4066;
+  --light: #fafafa;
+  --dark: #000000;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  background: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+  padding: 60px;
+  background: #00a6fb;
+  color: white;
+  text-align: center;
+}
+
+header a {
+  color: var(--light);
+}
+
+.align {
+  margin: auto;
+}
+
+.navLinks {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.navLinks li {
+  display: inline;
+  padding: 10px;
+}
+
+ul {
+  padding-inline-start: 0px !important;
+}
+
+header a:hover{
+  color: #c7ef00;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 5px 0;
+  line-height: 1.25;
+}
+
+.size1 {
+  font-size: 3rem;
+}
+
+.size2 {
+  font-size: 2.25rem;
+}
+
+.size3 {
+  font-size: 1.75rem;
+}
+
+.size4 {
+  font-size: 1.5rem;
+}
+
+.size5 {
+  font-size: 1.25rem;
+}
+
+.size6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+span[role="img"] {
+  cursor: default;
+}
+
+li {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .size1 {
+    font-size: 2rem;
+  }
+  
+  .size2 {
+    font-size: 1.75rem;
+  }
+  
+  .size3 {
+    font-size: 1.75rem;
+  }
+  
+  .size4 {
+    font-size: 1.2rem;
+  }
+  
+  .size5 {
+    font-size: 1.25rem;
+  }
+  
+  .size6 {
+    font-size: 1rem;
+  }
+
+  .navLinks {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    padding: 30px 60px 20px 60px;
+  }
+
+  body {
+    letter-spacing: .05rem;
+  }
 }
