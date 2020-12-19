@@ -1,10 +1,15 @@
 import React from 'react';
-import Nav from './components/Nav'
+import Navbr from './components/Nav'
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <Navbr />
+
+      <main>
+        <Projects />
+      </main>
     </div>
   );
 }
