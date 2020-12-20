@@ -34,7 +34,7 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -62,10 +62,6 @@ header p {
   font-size: 1.5rem !important;
 }
 
-.navLinks:hover {
-  color: var(--davysGrey) !important;
-}
-
 .align {
   margin: auto;
 }
@@ -74,10 +70,8 @@ ul {
   padding-inline-start: 0px !important;
 }
 
-header a:hover{
-  color: var(--davysGrey);
-  transition: 0.1s;
-  text-decoration: none;
+label {
+ color: rgba(41, 51, 71, 0.65)
 }
 
 h1,
@@ -103,8 +97,8 @@ h6 {
   font-size: 1.75rem;
 }
 
-.size4 {
-  font-size: 1.5rem;
+.size4, input {
+  font-size: 1.5rem !important;
 }
 
 .size5 {
@@ -125,20 +119,8 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-span[role="img"] {
-  cursor: default;
-}
-
 li {
   list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
 }
 
 nav  li {
@@ -147,35 +129,132 @@ nav  li {
 .imgContainer {
   min-height: 100%;
   min-width: 100%;
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  -webkit-box-shadow:0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  -moz-box-shadow:0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  border-radius: 11px;
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25); 
+  -moz-box-shadow:0 6px 13px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,0.25);
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  cursor: pointer;
-}
-
-.imgContainer:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  transition: .3s ease-in-out;
   background: linear-gradient(223deg, rgba(0,166,251,0.5634628851540616) 0%, rgba(2,33,64,0.5186449579831933) 23%);
-}
-
-.imgThumbnail {
   cursor: pointer;
-  border-radius: 5px;
-  transition: .3s;
-}
-
-.imgThumbnail:hover {
-  opacity: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+.imgThumbnail {
+  cursor: pointer;
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gitBtn {
+  color: var(--blueJeans);
+  border: 2px solid var(--blueJeans);
+  padding: 10px 40px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  transition: 0.1s;
+  background-color: #FFFFFF;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.underline {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  background:white;
+  color:rgba(5, 6, 8, 0.75);
+  padding-bottom:4px;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin-bottom: -3px;
+  background: linear-gradient(90deg, rgba(0,166,251,1) 0%, rgba(255,255,255,1) 79%);
+}
+
+.bio {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 900px) {
+  .gitBtn:hover {
+    color: white;
+    background: var(--blueJeans);;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .imgContainer:hover .overlay {
+    opacity: 1;
+  }
+  
+  .imgContainer:hover .imgThumbnail {
+    opacity: 0;
+  }
+  
+  .navLinks:hover {
+    color: var(--davysGrey) !important;
+  }
+  
+  header a:hover{
+    color: var(--davysGrey);
+    transition: 0.1s;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+  }
+  
+  .imgContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -215,5 +294,11 @@ img {
 
   body {
     letter-spacing: .05rem;
+  }
+
+  main {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 90%;
   }
 }
