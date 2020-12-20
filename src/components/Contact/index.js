@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { validateEmail } from '../../utils/helpers'
 import { Row, Col, Form, Container } from 'react-bootstrap';
 

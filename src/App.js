@@ -11,7 +11,7 @@ function App() {
 
   const page = () => {
     switch (currentPage) {
-      case 'About Me': 
+      default:
         return <About />;
       case 'Projects':
         return <Projects />;
@@ -29,6 +29,7 @@ function App() {
         {page()}
       </main>
     </div>
+    
   );
 }
 
