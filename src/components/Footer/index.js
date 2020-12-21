@@ -12,9 +12,9 @@ function Footer() {
         <footer>
             <Container className='footerContainer'>
                 <div className='footerBox'>
-                <a className='px-2' rel="noopener noreferrer" target='_blank' href="https://www.linkedin.com/in/grey-whittenberger/"><GoMarkGithub className='svgLink' color="#00a6fb" size={40} /></a>
+                <a className='px-2' rel="noopener noreferrer" target='_blank' href="https://github.com/Grey-Whitt/"><GoMarkGithub className='svgLink' color="#00a6fb" size={40} /></a>
                 <a className='px-2' rel="noopener noreferrer" target='_blank' href="https://stackexchange.com/users/19078884/greyw"><DiStackoverflow className='svgLink' color="#00a6fb" size={40} /></a>
-                <a className='px-2' rel="noopener noreferrer" target='_blank' href="https://github.com/Grey-Whitt/"><GrLinkedin className='svgLink' color="#00a6fb" size={40} /></a>
+                <a className='px-2' rel="noopener noreferrer" target='_blank' href="https://www.linkedin.com/in/grey-whittenberger/"><GrLinkedin className='svgLink' color="#00a6fb" size={40} /></a>
                 </div>
             </Container>
         </footer>
