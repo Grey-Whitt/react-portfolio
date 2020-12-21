@@ -7,7 +7,7 @@ function About() {
         <>
             <div className='mb-3 underline'><h1>About Me</h1></div>
             <Row >
-                <Col lg={4}><Image className='' src='/images/me.png' thumbnail/></Col>
+                <Col lg={4}><Image src={require(`../../assets/images/me.png`)} thumbnail/></Col>
                 <Col lg={8}> 
                     <p className='bio'>
                     I am an enthusiastic and highly motivated Web Developer who is ready to apply my knowledge, creativity, positive attitude, and deep passion for learning to a position within the industry. I’m regarded as a dedicated team member, with a thorough understanding of the full stack. I am also highly organized, with a keen eye for detail and the proven ability to manage multiple tasks simultaneously. I have a certificate in full-stack development from UT of Austin.    
