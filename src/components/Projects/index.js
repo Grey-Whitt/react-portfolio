@@ -5,59 +5,43 @@ function Portfolio() {
     //projects that will be mapped over to be displayed on page
     const [Projects] = useState([
         {
-            name: 'Budget Tracker',
-            tech: 'Full-stack PWA',
-            source: 'tech-blog.png',
-            description: 'Tech blog is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
-        },
-        {
-            name: 'Note Taker',
-            tech: 'db project',
-            source: 'note-taker.png',
-            description: 'note taker is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
-        },
-        {
             name: 'Tech Blog',
-            tech: 'Full-stack db',
             source: 'tech-blog.png',
-            description: 'Tech blog is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
+            link: 'https://github.com/Grey-Whitt/tech-blog'
+        },
+        {
+            name: 'Note Taker',
+            source: 'note-taker.png',
+            link: 'https://github.com/Grey-Whitt/note-taker'
+        },
+        {
+            name: 'Budget Tracker',
+            source: 'budget-tracker.png',
+            link: 'https://github.com/Grey-Whitt/budget-tracker'
         }, {
-            name: 'Budget Tracker',
-            tech: 'Full-stack PWA',
-            source: 'tech-blog.png',
-            description: 'Tech blog is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
+            name: 'Team Profile Generator',
+            source: 'team.png',
+            link: 'https://github.com/Grey-Whitt/team-profile-generator'
         },
         {
-            name: 'Note Taker',
-            tech: 'db project',
-            source: 'note-taker.png',
-            description: 'note taker is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
+            name: 'Clinic Pal',
+            source: 'clinic-pal.jpg',
+            link: 'https://clinic-pal.herokuapp.com/'
         },
         {
-            name: 'Budget Tracker3',
-            tech: 'Full-stack PWA',
-            source: 'tech-blog.png',
-            description: 'Tech blog is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
+            name: 'Space Dash',
+            source: 'space-dash.jpg',
+            link: 'https://github.com/Team-Incredibles/Group-Project'
         },
         {
-            name: 'Budget Tracker',
-            tech: 'Full-stack PWA',
-            source: 'tech-blog.png',
-            description: 'Tech blog is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
+            name: 'Weather Dashboard',
+            source: 'weather.png',
+            link: 'https://github.com/Grey-Whitt/weather-dashboard'
         },
         {
-            name: 'Note Taker',
-            tech: 'db project',
-            source: 'note-taker.png',
-            description: 'note taker is a lorem ipsum delor sit amet',
-            link: 'https://www.google.com/'
+            name: 'Portfolio Generator',
+            source: 'portfolio-gen.png',
+            link: 'https://github.com/Grey-Whitt/portfolio-generator'
         }
     ])
 
@@ -75,7 +59,7 @@ function Portfolio() {
                                 className="imgThumbnail"
                             />
                             <div className='overlay'>
-                                <div className='description'>{project.description}</div>
+                                <div className='description'>{project.name}</div>
                             </div>
                         </div>
                     </a>

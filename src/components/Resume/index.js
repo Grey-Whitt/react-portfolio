@@ -36,6 +36,7 @@ function Resume() {
                     </ul>
                 </Col>
             </Row>
+            <p className='mt-5'>Download my full resume <a rel="noopener noreferrer" target='_blank' href="/images/example-resume.png" download>here</a>. (Resume is a WIP and not attached yet.)</p>
         </Container>
     )
 }
