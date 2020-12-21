@@ -71,6 +71,15 @@ header p {
   font-size: 1.5rem !important;
 }
 
+.navLinks:active {
+  transform: scale(1) !important;
+}
+
+.navActive {
+  color: var(--davysGrey) !important;
+  transform: scale(1.03) !important;
+}
+
 .align {
   margin: auto;
 }
@@ -249,6 +258,27 @@ footer {
   color: white;
 }
 
+.svgLink {
+  transition: .03s;
+}
+
+.skills {
+  text-align: center;
+  min-height: 100%;
+  padding: 70px 45px;
+  border-right: 1px solid #E6ECF8;
+  line-height: 2;
+}
+
+.skills:last-child {
+  border-right: none;
+}
+
+.skillContainer {
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+}
+
 @media (min-width: 900px) {
   .gitBtn:hover {
     color: white;
@@ -273,19 +303,17 @@ footer {
     color: var(--davysGrey);
     transition: 0.1s;
     text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  nav a:hover {
-    text-decoration: none;
+    transform: scale(1.03);
   }
   
   .imgContainer:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+
+  .svgLink:hover {
+    fill: #80d3fd;
+    transform: scale(1.05);
   }
 
 }
@@ -333,5 +361,17 @@ footer {
     padding-left: 0;
     padding-right: 0;
     max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .skills {
+    border-bottom: 1px solid #E6ECF8;
+    border-right: none;
+  }
+  
+  .skills:last-child {
+    border-bottom: none;
   }
 }

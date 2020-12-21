@@ -14,9 +14,10 @@ function Navbr({currentPage, setPage}) {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='ml-auto' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ml-auto'>
-                        <Nav.Link onClick={() => setPage('About Me')} className='navLinks'>About Me</Nav.Link>
-                        <Nav.Link onClick={() => setPage('Contact')} className='navLinks'>Contact</Nav.Link>
-                        <Nav.Link onClick={() => setPage('Projects')} className='navLinks'>Projects</Nav.Link>
+                        <Nav.Link onClick={() => setPage('About Me')} className={`navLinks ${currentPage === 'About Me' && `navActive`}`}>About Me</Nav.Link>
+                        <Nav.Link onClick={() => setPage('Contact')} className={`navLinks ${currentPage === 'Contact' && `navActive`}`}>Contact</Nav.Link>
+                        <Nav.Link onClick={() => setPage('Projects')} className={`navLinks ${currentPage === 'Projects' && `navActive`}`}>Projects</Nav.Link>
+                        <Nav.Link onClick={() => setPage('Resume')} className={`navLinks ${currentPage === 'Resume' && `navActive`}`}>Resume</Nav.Link>
                         <Nav.Link href='https://github.com/Grey-Whitt' rel="noopener noreferrer" target='_blank' className='navLinks'>Github</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

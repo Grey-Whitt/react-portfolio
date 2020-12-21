@@ -63,8 +63,9 @@ function Contact() {
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )}
-                    <button className='gitBtn' type="submit" onSubmit={handleSubmit}>Submit</button>
+                    
                 </Row>
+                <div className='centered'><button className='gitBtn' type="submit" onSubmit={handleSubmit}>Submit</button></div>
             </Container>
         </>
     )

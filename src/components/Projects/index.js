@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 function Portfolio() {
+    //projects that will be mapped over to be displayed on page
     const [Projects] = useState([
         {
             name: 'Budget Tracker',
@@ -76,7 +77,7 @@ function Portfolio() {
                             <div className='overlay'>
                                 <div className='description'>{project.description}</div>
                             </div>
-                        </div> 
+                        </div>
                     </a>
 
                 </Col>
