@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed2d52df07ee8258637851c37d61b124",
+    "revision": "9eedd997f443d315a19537c7cf8a554c",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "7904997a7916b2c1b978",
+    "revision": "74beb36b5cf255953378",
     "url": "/react-portfolio/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "5c1f5eff5332c9020ba8",
+    "revision": "b27aaad9279641b69678",
     "url": "/react-portfolio/static/css/main.fb79a4de.chunk.css"
   },
   {
-    "revision": "7904997a7916b2c1b978",
-    "url": "/react-portfolio/static/js/2.678cf434.chunk.js"
+    "revision": "74beb36b5cf255953378",
+    "url": "/react-portfolio/static/js/2.04db6005.chunk.js"
   },
   {
     "revision": "6bbb3a8e7360a6a98672414629b231d4",
-    "url": "/react-portfolio/static/js/2.678cf434.chunk.js.LICENSE.txt"
+    "url": "/react-portfolio/static/js/2.04db6005.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9388c4b27e8bc7f3c6d5",
-    "url": "/react-portfolio/static/js/3.b1882400.chunk.js"
+    "revision": "338651940e8fb818ed2f",
+    "url": "/react-portfolio/static/js/3.7f584ba2.chunk.js"
   },
   {
-    "revision": "5c1f5eff5332c9020ba8",
-    "url": "/react-portfolio/static/js/main.b3ef2839.chunk.js"
+    "revision": "b27aaad9279641b69678",
+    "url": "/react-portfolio/static/js/main.5177d171.chunk.js"
   },
   {
-    "revision": "c6e2d4f9152e8ff06204",
-    "url": "/react-portfolio/static/js/runtime-main.61021c8d.js"
+    "revision": "d2e85ca4fdacad19e638",
+    "url": "/react-portfolio/static/js/runtime-main.66174016.js"
   },
   {
     "revision": "188f0f16bc8ad6d6cce66c79885a7aa9",
@@ -38,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a6cd77b41824f6e6db46175307a6d9d4",
     "url": "/react-portfolio/static/media/clinic-pal.a6cd77b4.jpg"
+  },
+  {
+    "revision": "702e99322dc0afb9d5dc3202d3c6c93c",
+    "url": "/react-portfolio/static/media/example-resume.702e9932.png"
+  },
+  {
+    "revision": "8ff03e14cbac57fd521bcb0f93a231c9",
+    "url": "/react-portfolio/static/media/me.8ff03e14.png"
   },
   {
     "revision": "28422d9e67fb218e02c2d965483f0019",
