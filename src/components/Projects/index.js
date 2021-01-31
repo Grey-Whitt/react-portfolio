@@ -42,6 +42,11 @@ function Portfolio() {
             name: 'Portfolio Generator',
             source: 'portfolio-gen.png',
             link: 'https://github.com/Grey-Whitt/portfolio-generator'
+        },
+        {
+            name: 'Living Real',
+            source: 'living-real.png',
+            link: 'https://github.com/P3T2-Realty-Rogues/living-real'
         }
     ])
 
